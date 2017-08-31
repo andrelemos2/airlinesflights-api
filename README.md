@@ -16,7 +16,9 @@ https://airlinesflights-api.herokuapp.com/aereos
 
 ## Pré requisito
 
-Banco MYSQL na porta padrão (3306)
+Banco MYSQL na porta padrão (3306).
+
+Porta padrão web container livre, caso não esteja configurar no arquivo `application.properties` com a linha a seguir: `server.port=xxxx` escolher a porta.
 
 ## Construindo na sua máquina
 
