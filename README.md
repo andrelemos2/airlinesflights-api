@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/andrelemos2/agendamento-financeiro.svg?branch=master)](https://travis-ci.org/andrelemos2/agendamento-financeiro)
+[![Build Status](https://travis-ci.org/andrelemos2/airlinesflights-api.svg?branch=master)](https://travis-ci.org/andrelemos2/agendamento-financeiro)
 
 Airlines Flights API (Informações aéreas)
 ==========================
