@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import br.com.andrelemos.airlinesflights.api.config.AirlinesFlightsApiProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(AirlinesFlightsApiProperties.class)
+//@EnableConfigurationProperties(AirlinesFlightsApiProperties.class)
 public class AirlinesFlightsApiApplication {
 
 	public static void main(String[] args) {
