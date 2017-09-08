@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
 @RestController
 @RequestMapping("/aereos")
 public class AereoResource {
@@ -16,11 +15,13 @@ public class AereoResource {
 	@Autowired
 	private AereoService service;
 
+	@CrossOrigin
     @GetMapping
 	public List<Aereo> pesquisar() {
 		return service.buscarTodos();
 	}
 
+	@CrossOrigin
 	@GetMapping("/{codigo}")
 	public ResponseEntity<Aereo> buscarPeloCodigo(@PathVariable Long codigo) {
 		Aereo aereo = service.buscarPorCodigo(codigo);
