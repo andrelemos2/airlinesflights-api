@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/aereos")
 public class AereoResource {
@@ -15,16 +16,14 @@ public class AereoResource {
 	@Autowired
 	private AereoService service;
 
-        @CrossOrigin
-	@GetMapping
+    @GetMapping
 	public List<Aereo> pesquisar() {
-		return service.listarTodos();
+		return service.buscarTodos();
 	}
 
-        @CrossOrigin
 	@GetMapping("/{codigo}")
 	public ResponseEntity<Aereo> buscarPeloCodigo(@PathVariable Long codigo) {
-		Aereo aereo = service.pesquisarPorCodigo(codigo);
+		Aereo aereo = service.buscarPorCodigo(codigo);
 		return aereo != null ? ResponseEntity.ok(aereo) : ResponseEntity.notFound().build();
 	}
 }
